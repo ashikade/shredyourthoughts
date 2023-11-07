@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/thoughtshredder.css">
+    <script src="scripts/thoughtshredder.js"></script>
+    
+    <title>Thought Shredder</title>
+</head>
+<body>
+    <div class="heading">
+    <p>What are you 
+        thinking about?
+    </p>
+</div>
+    <div class="subline">
+        <p>The average person has about 60,000 thoughts a day. 80% of these thoughts were found to be negative,
+            <br>
+         and 95% were exactly the same repetitive thoughts as the day before. Break the cycle of overthinking, go ahead and shred your thoughts!</p>
+    </div>
+
+    <div class="container">
+        <div class="textarea-container">
+            <textarea id="thoughts" placeholder="Share your thoughts..." style="background-image: url('images/white-paper-texture.jpg');"></textarea>
+        </div>
+        <div id="shredded-text" style="background-image: url('images/shredded-paper.png');"></div>
+        <button id="submit" onclick="shredText()">SHRED YOUR THOUGHTS!</button>
+        <audio id="shredder-sound" src="MP3/shredder-sound.mp3" type="audio/mpeg"></audio>
+        
+    </div>
+    <p>Total Submissions: <span id="submissionCount">0</span></p>
+    <script src="countSubmissions.js"></script>
+</body>
+</html>
